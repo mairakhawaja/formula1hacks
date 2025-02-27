@@ -1,0 +1,344 @@
+/* getting rid of default css styling */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    /* background-color: #fff; */ 
+    background: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-align: center; /* Center-align text inside the container */
+    width: 100%;
+    padding: 10px 250px; /* Top/Bottom: 15px, Left/Right: 60px */
+    position: sticky; /* Keeps the nav at the top on scroll */
+    top: 0;
+    z-index: 1000; /* Ensures the nav stays above content */
+    backdrop-filter: blur(8px); /* Optional: adds a blur effect for a frosted-glass look */
+}
+
+h1{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 0;
+}
+
+/* styling the formula1hacks button */
+#navigation h2 {
+    font-size: 45px;
+    color: black; 
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+  
+  
+   nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+    color: #fff; 
+  }  
+
+  /* when clicking links/buttons */ 
+  nav a {
+    text-decoration: none;
+    font-family: "Montserrat ", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+
+  .hover-box {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 20px; /* Initial text color */
+    background-color: white; /* Initial background color */
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    transition: all 0.2s ease; /* Smooth transition for hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    letter-spacing: 1px;
+    font-family: "Inter";
+  }
+
+  .hover-box.about:hover {
+    background-color: #E8002D; 
+    color: white;
+  } 
+
+  .hover-box.sponsors:hover {
+    background-color: #FF8000; 
+    color: white;
+  } 
+
+  .hover-box.faq:hover {
+    background-color: rgb(54, 113, 198); 
+    color: white;
+  } 
+
+  .hover-box.apply:hover {
+    background-color: #229971; 
+    color: white;
+  } 
+  a:link, a:visited {
+    color: inherit; /* Keeps the text color the same as the surrounding text */
+    text-decoration: none; /* Removes underline if desired */
+  }
+  body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg,rgba(54, 113, 198, 1) 0%,  rgb(255, 255, 255) 100% );
+    background-attachment: fixed;
+}
+
+button.hover-box {
+border-radius: 10px; 
+font-family: "Inter";
+margin-top: 15px;
+margin-bottom: 15px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+ 
+html{
+align-items: center;
+text-align: center;
+}
+
+.hero {
+  position: relative; /* To position text on top */
+  min-height: 100vh; /* Full viewport height */
+  background: url('../img/formula1-car.jpg') no-repeat center center/cover;
+  color: white; /* White text for contrast */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  padding: 6em 0;
+}
+
+.hero-content {
+  text-align: center; 
+  border-radius: 10px;
+  top: 100px; /* Distance from the top of the hero */
+  left: 10%; /* Distance from the left of the hero */
+  font-size: 80px; 
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  background-attachment: fixed;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero-subcontent p { 
+  font-family: 'Inter';
+  font-size: 18px;
+  letter-spacing: 1.5;
+}
+
+
+.until {
+  width: 700px;/* if you zoom in and out (add more or less pixels), the container will still only take 500 px space */
+  display: grid; /* allows you to put things in columns */ 
+  grid-template-columns: repeat(3,1fr); /* 4 columns and every column takes the same amoutn of space "1fr"*/
+  gap: 16px; /* 1m means 1 times the currnt font size and gap is the space between the elements */
+  padding: 16px; /* padding is the space around the inside element */
+  border-radius: 10px; 
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  font-family: sans-serif;
+  position: absolute; 
+  top: 410px;
+  left: 20%; 
+}
+
+.timerbackground {
+  display: inline-block;
+  z-index: 10; 
+  position: relative;
+}
+
+.until__component{
+  text-align: center;
+  background-color: #000;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0); 
+  max-width: 180px;
+  min-height: 200px;
+  background-color: rgba(226, 226, 226, 0.5);
+}
+
+.until__numeric{
+color: #fff;
+padding: 6.4px 0px 0px 0px; 
+font-size: 80px;
+font-weight: bold;
+font-family: "Montserrat ", sans-serif;
+text-transform: uppercase;
+}
+
+.until__units{
+  font-size: 20.8px; 
+  font-weight: bold;
+  color:#E8002D;
+  font-family: "Montserrat ", sans-serif;
+  text-transform: uppercase;
+  padding: 6.4px 0; 
+}
+
+.until__event{
+  color:#d8d8d8;
+  grid-column: span 2;
+  margin-left: 150px;
+  font-family: "Playfair Display", serif;
+  background-color: rgba(216, 216, 216,0.5);
+  border-radius: 5px;
+}
+
+/*note: better to use em bacuse its relative and wont affect everything like the padding and style when you use absolute units like px for font size */ 
+
+.about-container {
+  display: flex;
+  align-items: center; /* Vertically aligns the content */
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  gap: 120px;
+}
+
+.about-image img {
+  max-width: 500px;
+  border: 2px solid black;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-content {
+  flex: 1; /* Pushes the content to take up remaining space */
+}
+
+.about-content h2 {
+  color: rgb(54, 113, 198);
+  font-size: 48px;
+  font-family: "Montserrat ", sans-serif;
+  text-align: left;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-content p {
+  font-size: 19.2px;
+  color: #ffffff;
+  line-height: 1.6;
+  font-family: "Montserrat ", sans-serif;
+  text-align: left;
+}
+
+.faqsection h2{
+  color: rgb(54, 113, 198);
+  font-size: 48px;
+  font-family: 'Inter';
+  text-align: center;
+  padding: 20px;
+  margin-top: 200px;
+  font-weight: bold;
+}
+
+.faqcard{
+border-radius: 20px;
+box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+display: block;
+border: 1px solid rgb(0, 0, 0, 0.1);
+margin: 0 auto;
+overflow: visible;
+max-width: 100%;
+height: auto;
+}
+
+.accordion-button{
+border-radius: 10px;
+background-color: white;
+padding: 32px;
+border: none;
+text-align: left;
+justify-content: space-between;
+max-width: 1000px; 
+height: auto;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  box-shadow: none;
+  color: #000;
+  border-radius: 10px 10px 0 0;
+  padding: 32px;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  background-color: transparent; 
+}
+
+.accordion-body {
+  background-color: transparent;
+  border-radius: 0px 0px 10px 10px; /* Rounded bottom corners */
+  padding: 32px;
+  color: #ffffff;
+  text-align: left;
+  border: 2px solid #fff;
+  font-family: 'Inter';
+  font-size: 16px;
+
+}
+
+.accordion{
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+.accordion-button:hover {
+  background-color: rgb(54, 113, 198);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#accordion h3{
+  font-family: 'Inter';
+  font-size: 20px;
+}
+
+footer{
+  background-color: rgb(54, 113, 198);
+  margin-top: 150px;
+  font-size: 18px;
+  color: #fff;
+  height: 200px;
+  font-family: "Montserrat ", sans-serif;
+  display: block;
+  align-content: center;
+}
+
+footer div.Contact{
+  font-weight:bold;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer img{
+margin-bottom: 20px;
+}
+
+
+

@@ -120,7 +120,7 @@ text-align: center;
 .hero {
   position: relative; /* To position text on top */
   min-height: 100vh; /* Full viewport height */
-  background: url('../img/formula1-car.jpg') no-repeat center center/cover;
+  background: url('formula1-car.jpg') no-repeat center center/cover;
   color: white; /* White text for contrast */
   display: flex; /* Center content */
   justify-content: center; /* Center horizontally */
